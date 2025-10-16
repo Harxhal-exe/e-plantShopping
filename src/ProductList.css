@@ -161,17 +161,26 @@ body {
     font-size: 19px;
 }
 .cart{
-    color: white;
-    display: flex;
+    position: relative; /* Allows child elements (the count) to be positioned relative to the icon */
+    display: inline-block;
 }
 .cart_quantity_count{
-    margin-top: 16px;
-    /* background-color: red; */
-    margin-left: 27px;
     position: absolute;
-    font-size: 29px;
+    top: 5px; /* Adjust vertical position */
+    right: 5px; /* Adjust horizontal position */
+    background-color: red; /* Badge color */
+    color: white;
+    border-radius: 50%; /* Makes it a circle */
+    padding: 2px 8px; /* Padding for size */
+    font-size: 16px; 
+    font-weight: bold;
+    line-height: 1.2;
+    min-width: 25px; /* Ensures minimum size for single digits */
+    text-align: center;
+    transform: translate(50%, -50%); /* Moves the badge to the top-right corner of the icon area */
 
-}
+ } 
+
 .plantname_heading{
    display: flex;
    align-items: center;
